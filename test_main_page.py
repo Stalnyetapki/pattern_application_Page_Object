@@ -16,6 +16,8 @@ def test_guest_can_go_to_login_page(driver):
 def go_to_login_page(driver):
     link = driver.find_element_by_css_selector("#login_link")
     link.click()
+    alert = driver.switch_to.alert
+    alert.accept()
 
 
 def test_guest_should_see_login_link(driver):

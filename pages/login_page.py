@@ -11,7 +11,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         # реализуйте проверку на корректный url адрес
-        assert "login" in self.driver.current_url, "current url is not a url of login page "
+        assert "login" in self.driver.current_url, "Current url is not a url of login page"
 
     def should_be_login_form(self):
         # реализуйте проверку, что есть форма логина
